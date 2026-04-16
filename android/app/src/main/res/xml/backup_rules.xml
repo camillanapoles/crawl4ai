@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Backup rules: exclude sensitive data and large cache files -->
+<full-backup-content>
+    <!-- Exclude the SQLite cache — can be very large and is re-creatable -->
+    <exclude domain="database" path="crawl4ai_cache.db" />
+    <exclude domain="database" path="crawl4ai_cache.db-shm" />
+    <exclude domain="database" path="crawl4ai_cache.db-wal" />
+    <!-- Exclude DataStore preferences that may contain API keys -->
+    <exclude domain="file" path="datastore/" />
+</full-backup-content>

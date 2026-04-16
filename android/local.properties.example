@@ -1,0 +1,22 @@
+## local.properties.example
+##
+## Copy this file to local.properties (which is gitignored) and fill in your values.
+## ─────────────────────────────────────────────────────────────────────────────────
+
+# Path to your local Android SDK installation
+sdk.dir=/path/to/Android/Sdk
+
+# (Optional) Path to a local NDK if you need to build native extensions
+# ndk.dir=/path/to/android-ndk
+
+# ── Optional remote Docker/Crawl4AI server ────────────────────────────────
+# If you want to delegate heavy crawls to a remote Crawl4AI Docker instance
+# instead of running fully on-device, set these values.
+# crawl4ai.docker.host=https://your-server.example.com
+# crawl4ai.docker.port=11235
+# crawl4ai.docker.token=<jwt-token>
+
+# ── LLM provider (optional) ───────────────────────────────────────────────
+# Required only if using LLMExtractionStrategy.
+# crawl4ai.llm.provider=openai/gpt-4o
+# crawl4ai.llm.api_key=sk-...

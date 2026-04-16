@@ -149,6 +149,7 @@ fun Crawl4AINavHost(
                     onDeepCrawlClick = { navController.navigate(Routes.DEEP_CRAWL) },
                     onHistoryClick = { navController.navigate(Routes.HISTORY) },
                     onResultClick = { id -> navController.navigate(Routes.results(id)) },
+                    onSettingsClick = { navController.navigate(Routes.SETTINGS) },
                 )
             }
 

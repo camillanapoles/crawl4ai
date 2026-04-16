@@ -73,4 +73,17 @@
     <string name="placeholder_url">https://example.com</string>
     <string name="placeholder_no_results">No results yet — start a crawl!</string>
     <string name="placeholder_no_history">No crawl history</string>
+
+    <!-- Settings -->
+    <string name="settings_appearance">Appearance</string>
+    <string name="settings_cache">Cache</string>
+    <string name="settings_notifications">Notifications</string>
+    <string name="settings_history">History</string>
+    <string name="settings_crawl_defaults">Crawl Defaults</string>
+    <string name="settings_remote_docker">Remote Docker</string>
+
+    <!-- Config manager -->
+    <string name="config_new">New Configuration</string>
+    <string name="config_set_default">Set as default</string>
+    <string name="config_no_configs">No saved configurations</string>
 </resources>

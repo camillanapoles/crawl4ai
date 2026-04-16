@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Crawl4AI</string>
+
+    <!-- Navigation labels -->
+    <string name="nav_home">Home</string>
+    <string name="nav_crawl">Crawl</string>
+    <string name="nav_deep_crawl">Deep Crawl</string>
+    <string name="nav_config">Config</string>
+    <string name="nav_history">History</string>
+    <string name="nav_settings">Settings</string>
+
+    <!-- Actions -->
+    <string name="action_crawl">Start Crawl</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="action_pause">Pause</string>
+    <string name="action_resume">Resume</string>
+    <string name="action_export">Export</string>
+    <string name="action_copy">Copy</string>
+    <string name="action_share">Share</string>
+    <string name="action_save">Save</string>
+    <string name="action_delete">Delete</string>
+    <string name="action_re_run">Re-run</string>
+
+    <!-- Crawl status labels -->
+    <string name="status_idle">Ready</string>
+    <string name="status_crawling">Crawling…</string>
+    <string name="status_paused">Paused</string>
+    <string name="status_completed">Completed</string>
+    <string name="status_failed">Failed</string>
+
+    <!-- Notifications -->
+    <string name="notif_channel_crawl_name">Active Crawls</string>
+    <string name="notif_channel_crawl_desc">Shows progress of running crawl jobs</string>
+    <string name="notif_crawl_in_progress">Crawl in progress</string>
+    <string name="notif_crawl_completed">Crawl completed</string>
+    <string name="notif_crawl_failed">Crawl failed</string>
+
+    <!-- Results tabs -->
+    <string name="tab_markdown">Markdown</string>
+    <string name="tab_html">HTML</string>
+    <string name="tab_extracted">Extracted</string>
+    <string name="tab_media">Media</string>
+    <string name="tab_links">Links</string>
+    <string name="tab_tables">Tables</string>
+    <string name="tab_raw">Raw</string>
+
+    <!-- Config -->
+    <string name="config_word_threshold">Word count threshold</string>
+    <string name="config_cache_mode">Cache mode</string>
+    <string name="config_timeout">Request timeout (s)</string>
+    <string name="config_extraction_strategy">Extraction strategy</string>
+    <string name="config_content_filter">Content filter</string>
+
+    <!-- Deep crawl -->
+    <string name="deep_crawl_strategy_bfs">Breadth-First (BFS)</string>
+    <string name="deep_crawl_strategy_dfs">Depth-First (DFS)</string>
+    <string name="deep_crawl_strategy_bff">Best-First (Score-based)</string>
+    <string name="deep_crawl_max_depth">Max depth</string>
+    <string name="deep_crawl_max_pages">Max pages</string>
+
+    <!-- Errors -->
+    <string name="error_invalid_url">Please enter a valid URL</string>
+    <string name="error_network">Network error — check your connection</string>
+    <string name="error_timeout">Request timed out</string>
+    <string name="error_python_init">Failed to initialise Python engine</string>
+
+    <!-- Permissions -->
+    <string name="perm_notification_rationale">Notification permission is needed to show crawl progress.</string>
+    <string name="perm_storage_rationale">Storage permission is needed to export crawl results.</string>
+
+    <!-- Placeholders -->
+    <string name="placeholder_url">https://example.com</string>
+    <string name="placeholder_no_results">No results yet — start a crawl!</string>
+    <string name="placeholder_no_history">No crawl history</string>
+</resources>

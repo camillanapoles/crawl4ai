@@ -1,0 +1,142 @@
+# ──────────────────────────────────────────────────────────────────────────
+#  Crawl4AI Android — Version Catalog
+#  Gradle libs.versions.toml
+# ──────────────────────────────────────────────────────────────────────────
+[versions]
+# Build tools
+kotlin                = "2.0.21"
+agp                   = "8.7.3"
+ksp                   = "2.0.21-1.0.27"
+
+# Chaquopy — embeds Python 3.10 inside the APK
+chaquopy              = "16.0.0"
+
+# AndroidX Core
+core-ktx              = "1.15.0"
+lifecycle             = "2.8.7"
+activity              = "1.10.1"
+fragment              = "1.8.5"
+appcompat             = "1.7.0"
+
+# Compose
+compose-bom           = "2024.12.01"
+navigation-compose    = "2.8.5"
+
+# Dependency Injection
+hilt                  = "2.52"
+hilt-navigation       = "1.2.0"
+
+# Data Layer
+room                  = "2.7.0"
+datastore             = "1.1.1"
+
+# Coroutines / Async
+coroutines            = "1.9.0"
+serialization-json    = "1.7.3"
+
+# Background Work
+work                  = "2.10.0"
+hilt-work             = "1.2.0"
+
+# Networking (remote Docker client)
+retrofit              = "2.11.0"
+okhttp                = "4.12.0"
+
+# UI
+coil                  = "2.7.0"
+markdown-compose      = "0.7.3"
+
+# Testing
+junit                 = "5.11.3"
+junit-android         = "1.2.1"
+espresso              = "3.6.1"
+mockk                 = "1.13.14"
+turbine               = "1.2.0"
+
+[libraries]
+# ── Kotlin & Android Core ──────────────────────────────────────────────────
+kotlin-stdlib               = { module = "org.jetbrains.kotlin:kotlin-stdlib",               version.ref = "kotlin" }
+core-ktx                    = { module = "androidx.core:core-ktx",                           version.ref = "core-ktx" }
+appcompat                   = { module = "androidx.appcompat:appcompat",                     version.ref = "appcompat" }
+activity-compose            = { module = "androidx.activity:activity-compose",               version.ref = "activity" }
+
+# ── Compose BOM + UI ───────────────────────────────────────────────────────
+compose-bom                 = { module = "androidx.compose:compose-bom",                     version.ref = "compose-bom" }
+compose-ui                  = { module = "androidx.compose.ui:ui" }
+compose-ui-graphics         = { module = "androidx.compose.ui:ui-graphics" }
+compose-ui-tooling          = { module = "androidx.compose.ui:ui-tooling" }
+compose-ui-tooling-preview  = { module = "androidx.compose.ui:ui-tooling-preview" }
+compose-ui-test-manifest    = { module = "androidx.compose.ui:ui-test-manifest" }
+compose-ui-test-junit4      = { module = "androidx.compose.ui:ui-test-junit4" }
+compose-material3           = { module = "androidx.compose.material3:material3" }
+compose-material-icons      = { module = "androidx.compose.material:material-icons-extended" }
+compose-foundation          = { module = "androidx.compose.foundation:foundation" }
+compose-animation           = { module = "androidx.compose.animation:animation" }
+compose-runtime             = { module = "androidx.compose.runtime:runtime" }
+compose-runtime-livedata    = { module = "androidx.compose.runtime:runtime-livedata" }
+
+# ── Navigation ─────────────────────────────────────────────────────────────
+navigation-compose          = { module = "androidx.navigation:navigation-compose",           version.ref = "navigation-compose" }
+
+# ── Lifecycle ──────────────────────────────────────────────────────────────
+lifecycle-runtime-ktx       = { module = "androidx.lifecycle:lifecycle-runtime-ktx",         version.ref = "lifecycle" }
+lifecycle-viewmodel-ktx     = { module = "androidx.lifecycle:lifecycle-viewmodel-ktx",       version.ref = "lifecycle" }
+lifecycle-viewmodel-compose = { module = "androidx.lifecycle:lifecycle-viewmodel-compose",   version.ref = "lifecycle" }
+lifecycle-runtime-compose   = { module = "androidx.lifecycle:lifecycle-runtime-compose",     version.ref = "lifecycle" }
+
+# ── Hilt DI ────────────────────────────────────────────────────────────────
+hilt-android                = { module = "com.google.dagger:hilt-android",                   version.ref = "hilt" }
+hilt-compiler               = { module = "com.google.dagger:hilt-android-compiler",          version.ref = "hilt" }
+hilt-navigation-compose     = { module = "androidx.hilt:hilt-navigation-compose",            version.ref = "hilt-navigation" }
+
+# ── Room ───────────────────────────────────────────────────────────────────
+room-runtime                = { module = "androidx.room:room-runtime",                       version.ref = "room" }
+room-ktx                    = { module = "androidx.room:room-ktx",                           version.ref = "room" }
+room-compiler               = { module = "androidx.room:room-compiler",                      version.ref = "room" }
+room-testing                = { module = "androidx.room:room-testing",                       version.ref = "room" }
+
+# ── DataStore ──────────────────────────────────────────────────────────────
+datastore-preferences       = { module = "androidx.datastore:datastore-preferences",         version.ref = "datastore" }
+
+# ── Coroutines ─────────────────────────────────────────────────────────────
+coroutines-android          = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "coroutines" }
+coroutines-test             = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-test",    version.ref = "coroutines" }
+
+# ── Serialization ──────────────────────────────────────────────────────────
+serialization-json          = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "serialization-json" }
+
+# ── WorkManager ────────────────────────────────────────────────────────────
+work-runtime-ktx            = { module = "androidx.work:work-runtime-ktx",                   version.ref = "work" }
+hilt-work                   = { module = "androidx.hilt:hilt-work",                          version.ref = "hilt-work" }
+hilt-work-compiler          = { module = "androidx.hilt:hilt-compiler",                      version.ref = "hilt-work" }
+work-testing                = { module = "androidx.work:work-testing",                       version.ref = "work" }
+
+# ── Networking (optional Docker client) ────────────────────────────────────
+retrofit                    = { module = "com.squareup.retrofit2:retrofit",                  version.ref = "retrofit" }
+retrofit-gson               = { module = "com.squareup.retrofit2:converter-gson",            version.ref = "retrofit" }
+okhttp-logging              = { module = "com.squareup.okhttp3:logging-interceptor",         version.ref = "okhttp" }
+
+# ── Image Loading ──────────────────────────────────────────────────────────
+coil-compose                = { module = "io.coil-kt:coil-compose",                          version.ref = "coil" }
+
+# ── Markdown Rendering ─────────────────────────────────────────────────────
+markdown-compose            = { module = "com.mikepenz:multiplatform-markdown-renderer-android", version.ref = "markdown-compose" }
+
+# ── Testing ────────────────────────────────────────────────────────────────
+junit-bom                   = { module = "org.junit:junit-bom",                              version.ref = "junit" }
+junit-jupiter               = { module = "org.junit.jupiter:junit-jupiter" }
+junit-android               = { module = "androidx.test.ext:junit",                          version.ref = "junit-android" }
+espresso-core               = { module = "androidx.test.espresso:espresso-core",             version.ref = "espresso" }
+mockk-android               = { module = "io.mockk:mockk-android",                          version.ref = "mockk" }
+mockk                       = { module = "io.mockk:mockk",                                   version.ref = "mockk" }
+turbine                     = { module = "app.cash.turbine:turbine",                         version.ref = "turbine" }
+
+[plugins]
+android-application         = { id = "com.android.application",              version.ref = "agp" }
+android-library             = { id = "com.android.library",                  version.ref = "agp" }
+kotlin-android              = { id = "org.jetbrains.kotlin.android",         version.ref = "kotlin" }
+kotlin-compose              = { id = "org.jetbrains.kotlin.plugin.compose",  version.ref = "kotlin" }
+kotlin-serialization        = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+ksp                         = { id = "com.google.devtools.ksp",              version.ref = "ksp" }
+hilt                        = { id = "com.google.dagger.hilt.android",       version.ref = "hilt" }
+chaquopy                    = { id = "com.chaquo.python",                    version.ref = "chaquopy" }

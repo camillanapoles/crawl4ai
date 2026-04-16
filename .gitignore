@@ -195,6 +195,9 @@ docs/examples/.chainlit/*
 local/
 .files/
 
+# Android data/local source tree (excluded by the pattern above, but we want it)
+!android/app/src/main/java/com/crawl4ai/android/data/local/
+
 a.txt
 .lambda_function.py
 ec2*

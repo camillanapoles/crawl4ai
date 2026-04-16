@@ -26,11 +26,7 @@ dependencyResolutionManagement {
         // Markdown rendering
         maven("https://jitpack.io")
     }
-    versionCatalogs {
-        create("libs") {
-            from(files("gradle/libs.versions.toml"))
-        }
-    }
+    // gradle/libs.versions.toml is auto-discovered by Gradle 7.4+; no explicit registration needed.
 }
 
 rootProject.name = "Crawl4AI"

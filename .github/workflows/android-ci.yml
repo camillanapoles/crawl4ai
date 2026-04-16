@@ -21,6 +21,10 @@ on:
         type: boolean
         default: false
 
+# Minimal permissions required — all jobs only need to read repository contents.
+permissions:
+  contents: read
+
 concurrency:
   group: android-${{ github.ref }}
   cancel-in-progress: true
